@@ -1,0 +1,57 @@
+/* ==========================================
+   VARIABLES GLOBALES
+   Palette de couleurs
+   ========================================== */
+
+:root{
+
+    /* Couleurs principales */
+
+    --primary:#2563EB;
+    --primary-dark:#1D4ED8;
+
+    /* Couleurs de fond */
+
+    --background:#F8FAFC;
+    --surface:#FFFFFF;
+
+    /* Couleurs du texte */
+
+    --text:#0F172A;
+    --text-light:#475569;
+
+    /* Bordures */
+    --radius-sm:8px;
+    --radius-md:16px;
+    --radius-lg:24px;
+    --border:#E2E8F0;
+
+    /* Couleurs secondaires */
+
+    --gray:#64748B;
+
+    /* Ombres */
+     --shadow-sm:0 4px 12px rgba(0,0,0,.08);
+    --shadow-md:0 10px 30px rgba(0,0,0,.10);
+    --shadow-lg:0 20px 50px rgba(0,0,0,.15);
+    --shadow:0 10px 30px rgba(15,23,42,.08);
+
+    /* Arrondis */
+
+    --radius:16px;
+
+    /* Espacements */
+
+    --space-xs:8px;
+    --space-sm:16px;
+    --space-md:24px;
+    --space-lg:48px;
+    --space-xl:80px;
+    --spacing:80px;
+
+    /* Transition */
+
+    --transition:.35s ease;
+
+
+}

@@ -1,0 +1,80 @@
+/* ==========================================
+   RESET CSS
+   ========================================== */
+
+/* Box model plus prévisible */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Suppression des marges par défaut */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Scroll fluide */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Images responsives */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Héritage des polices pour les formulaires */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Liens */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Listes */
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Body */
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Titres */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Paragraphes */
+
+p {
+    overflow-wrap: break-word;
+}
