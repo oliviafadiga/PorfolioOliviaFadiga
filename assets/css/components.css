@@ -1,0 +1,133 @@
+/* ==========================================
+   HEADER
+========================================== */
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    transition:var(--transition);
+
+}
+
+/* Classe ajoutée en JavaScript */
+
+.header.scrolled{
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* Barre de navigation */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:80px;
+
+}
+
+/* Logo */
+
+.logo{
+
+    font-family:var(--font-heading);
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+.logo span{
+
+    color:var(--primary);
+
+}
+
+/* Navigation */
+
+.nav-list{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+}
+
+.nav-list a{
+
+    position:relative;
+
+    color:var(--text-light);
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+/* Soulignement animé */
+
+.nav-list a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+.nav-list a:hover{
+
+    color:var(--text);
+
+}
+
+.nav-list a:hover::after{
+
+    width:100%;
+
+}
+
+/* Bouton menu */
+
+.menu-btn{
+
+    display:none;
+
+    font-size:1.8rem;
+
+    color:var(--text);
+
+}
