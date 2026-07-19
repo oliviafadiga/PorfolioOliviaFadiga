@@ -1,0 +1,83 @@
+/*==================================
+EXPERTISE
+===================================*/
+
+.expertise-list{
+
+    margin-top:6rem;
+
+}
+
+.expertise-item{
+
+    display:grid;
+
+    grid-template-columns:45% 55%;
+
+    align-items:center;
+
+    padding:3rem 0;
+
+    border-bottom:1px solid var(--line);
+
+    transition:.45s;
+
+}
+
+.expertise-item:hover{
+
+    border-color:var(--primary);
+
+}
+
+.expertise-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+}
+
+.expertise-left span{
+
+    color:var(--muted);
+
+    letter-spacing:.25rem;
+
+    font-size:.9rem;
+
+}
+
+.expertise-left h3{
+
+    font-size:clamp(2rem,5vw,4rem);
+
+    transition:.45s;
+
+}
+
+.expertise-item:hover h3{
+
+    color:var(--primary);
+
+    transform:translateX(12px);
+
+}
+
+.expertise-right{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.expertise-right p{
+
+    font-size:1.05rem;
+
+    color:var(--muted);
+
+}

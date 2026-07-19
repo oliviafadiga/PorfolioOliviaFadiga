@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 <title>Olivia Fadiga | Développeuse Web</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </div>
 
 </div>
-
+<div class="cursor-glow"></div>
 <!-- Header -->
 
 <header class="header">
@@ -82,55 +82,76 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <!-- Main -->
  <main>
 
-    <!-- ==========================================
-         HERO
-    =========================================== -->
+    <section class="hero" id="home">
 
-    <section class="hero">
+    <div class="hero-background">
 
-        <div class="container hero-container">
+        <div class="gradient gradient-1"></div>
 
-            <div class="hero-content">
+        <div class="gradient gradient-2"></div>
 
-                <p class="hero-subtitle">
-                    👋 Bonjour, je m'appelle
-                </p>
+    </div>
 
-                <h1>
-                    Olivia <span>Fadiga</span>
-                </h1>
+    <div class="container hero-container">
 
-                <h2>
-                    Développeuse Web
-                </h2>
+        <div class="hero-left">
 
-                <p class="hero-description">
+            <span class="hero-tag">
+                WEB DEVELOPER
+            </span>
 
-                    Diplômée en Techniques d'intégration multimédia et titulaire d'une
-                    Licence en Développement Web, je conçois des interfaces modernes,
-                    performantes et accessibles.
+            <h1>
 
-                </p>
+                <span class="line">Olivia</span>
 
-                <div class="hero-buttons">
+                <span class="line accent">Fadiga</span>
 
-                    <a href="#projects" class="btn btn-primary">
-                        Voir mes projets
-                    </a>
+            </h1>
 
-                    <a href="assets/pdf/CVFrance2026.pdf"
-                       class="btn btn-secondary"
-                       target="_blank">
+            <p>
 
-                        Télécharger mon CV
+                Je développe des interfaces web modernes,
+                performantes et accessibles avec une attention
+                particulière portée à l'expérience utilisateur.
 
-                    </a>
+            </p>
 
-                </div>
+            <div class="hero-buttons">
 
-            </div>
+    <a href="#projects" class="btn btn-primary">
 
-            <div class="hero-image">
+        <span>Découvrir mes projets</span>
+
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="none"
+            viewBox="0 0 24 24">
+
+            <path
+                d="M5 12H19M19 12L12 5M19 12L12 19"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+
+        </svg>
+
+    </a>
+
+    <a href="#contact" class="btn btn-secondary">
+
+        <span>Me contacter</span>
+
+    </a>
+
+</div>
+        </div>
+
+        <div class="hero-right">
+
+            <div class="photo-wrapper">
 
                 <img
                     src="assets/images/profile.png"
@@ -140,84 +161,100 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
         </div>
 
-    </section>
-    <section id="skills" class="section">
+    </div>
+
+</section>
+    <section class="expertise section" id="skills">
 
     <div class="container">
 
         <div class="section-title">
 
-            <span>Compétences</span>
+            <span>EXPERTISE</span>
 
-            <h2>Les technologies que j'utilise</h2>
-
-            <p>
-                Au cours de ma formation et de mes projets personnels,
-                j'ai développé des compétences en développement web,
-                intégration et outils collaboratifs.
-            </p>
+            <h2>Concevoir des interfaces modernes.</h2>
 
         </div>
 
-        <div class="skills-grid">
+        <div class="expertise-list">
 
-            <article class="skill-card">
+            <article class="expertise-item">
 
-                <i class="fa-brands fa-html5"></i>
+                <div class="expertise-left">
 
-                <h3>HTML5</h3>
+                    <span>01</span>
 
-                <p>Structure sémantique et accessibilité.</p>
+                    <h3>Front-End</h3>
 
-            </article>
+                </div>
 
-            <article class="skill-card">
+                <div class="expertise-right">
 
-                <i class="fa-brands fa-css3-alt"></i>
+                    <p>
+                        HTML · CSS · JavaScript
+                    </p>
 
-                <h3>CSS3</h3>
-
-                <p>Responsive Design, Flexbox et Grid.</p>
-
-            </article>
-
-            <article class="skill-card">
-
-                <i class="fa-brands fa-js"></i>
-
-                <h3>JavaScript</h3>
-
-                <p>Manipulation du DOM et interactions.</p>
+                </div>
 
             </article>
 
-            <article class="skill-card">
+            <article class="expertise-item">
 
-                <i class="fa-brands fa-git-alt"></i>
+                <div class="expertise-left">
 
-                <h3>Git</h3>
+                    <span>02</span>
 
-                <p>Gestion de versions avec GitHub.</p>
+                    <h3>Back-End</h3>
+
+                </div>
+
+                <div class="expertise-right">
+
+                    <p>
+                        PHP · MySQL
+                    </p>
+
+                </div>
 
             </article>
 
-            <article class="skill-card">
+            <article class="expertise-item">
 
-                <i class="fa-brands fa-php"></i>
+                <div class="expertise-left">
 
-                <h3>PHP</h3>
+                    <span>03</span>
 
-                <p>Développement back-end et formulaires.</p>
+                    <h3>Outils</h3>
+
+                </div>
+
+                <div class="expertise-right">
+
+                    <p>
+                        Git · GitHub · VS Code · Figma
+                    </p>
+
+                </div>
 
             </article>
 
-            <article class="skill-card">
+            <article class="expertise-item">
 
-                <i class="fa-solid fa-database"></i>
+                <div class="expertise-left">
 
-                <h3>MySQL</h3>
+                    <span>04</span>
 
-                <p>Conception et gestion de bases de données.</p>
+                    <h3>Bonnes pratiques</h3>
+
+                </div>
+
+                <div class="expertise-right">
+
+                    <p>
+                        Responsive · Accessibilité · SEO · Performance
+                    </p>
+
+                </div>
 
             </article>
 
@@ -226,241 +263,123 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </div>
 
 </section>
-<section id="projects" class="section">
+<section id="projects" class="projects section">
 
     <div class="container">
 
         <div class="section-title">
 
-            <span>Portfolio</span>
+            <span>Selected Work</span>
 
-            <h2>Mes projets</h2>
-
-            <p>
-                Une sélection de projets réalisés dans le cadre de ma formation
-                et de mes projets personnels.
-            </p>
+            <h2>Des projets pensés pour créer une expérience.</h2>
 
         </div>
 
-        <div class="projects-grid">
+        <div class="projects-list">
 
-            <!-- Projet 1 -->
+            <article class="project">
 
-            <article class="project-card">
+    <span class="project-number">01</span>
 
-                <div class="project-image">
+    <div class="project-content">
+
+        <div class="project-info">
+
+            <h3>Dashboard bancaire</h3>
+
+            <p>
+                Tableau de bord responsive destiné à la gestion de comptes bancaires.
+            </p>
+
+            <div class="project-stack">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
+            </div>
+
+            <div class="project-links">
+
+                <a href="#">GitHub ↗</a>
+                <a href="#">Voir le projet ↗</a>
+
+            </div>
+
+        </div>
+
+        <div class="project-image">
+
+            <div class="browser">
+
+                <div class="browser-header">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <div class="browser-screen">
 
                     <img src="assets/images/dashboard.jpg"
                          alt="Dashboard bancaire">
 
                 </div>
 
-                <div class="project-content">
+            </div>
 
-                    <h3>Dashboard Bancaire</h3>
+        </div>
 
-                    <p>
+    </div>
 
-                        Interface responsive simulant un tableau de bord bancaire
-                        avec graphiques, comptes et statistiques.
-
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>HTML</span>
-
-                        <span>CSS</span>
-
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#">GitHub</a>
-
-                        <a href="#">Démo</a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-            <!-- Projet 2 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-
-                    <img src="assets/images/employees.jpg"
-                         alt="Gestion employés">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>Gestion des employés</h3>
-
-                    <p>
-
-                        Application CRUD permettant d'ajouter, modifier
-                        et supprimer des employés.
-
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>HTML</span>
-
-                        <span>CSS</span>
-
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#">GitHub</a>
-
-                        <a href="#">Démo</a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-            <!-- Projet 3 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-
-                    <img src="assets/images/portfolio.jpg"
-                         alt="Portfolio">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>Portfolio</h3>
-
-                    <p>
-
-                        Site personnel développé en HTML, CSS et JavaScript,
-                        mettant en avant mon parcours et mes réalisations.
-
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>HTML</span>
-
-                        <span>CSS</span>
-
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#">GitHub</a>
-
-                        <a href="#">Démo</a>
-
-                    </div>
-
-                </div>
-
-            </article>
+</article>
 
         </div>
 
     </div>
 
 </section>
-  <section id="contact" class="section">
+  <section id="contact" class="contact section">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="contact-content">
 
-            <span>Contact</span>
+            <span class="contact-tag">
+                CONTACT
+            </span>
 
-            <h2>Discutons de votre projet</h2>
+            <h2>
+                Construisons ensemble votre prochain projet.
+            </h2>
 
             <p>
-                Je suis actuellement à la recherche d'opportunités en
-                développement web. N'hésitez pas à me contacter.
+
+                Je suis actuellement à la recherche d'une opportunité en développement web.
+                N'hésitez pas à me contacter pour échanger sur vos projets ou une collaboration.
+
             </p>
 
-        </div>
-
-        <div class="contact-container">
-
-            <div class="contact-card">
-
-                <i class="fa-solid fa-envelope"></i>
-
-                <h3>Email</h3>
+            <div class="contact-links">
 
                 <a href="mailto:olivia.fadiga.pa@hotmail.com">
-                    olivia.fadiga.pa@hotmail.com
+                    ✉️ Email
+                </a>
+
+                <a href="https://linkedin.com/in/oliviafadiga" target="_blank">
+                    LinkedIn ↗
+                </a>
+
+                <a href="https://github.com/oliviafadiga" target="_blank">
+                    GitHub ↗
                 </a>
 
             </div>
 
-            <div class="contact-card">
+            <a href="mailto:olivia.fadiga.pa@hotmail.com" class="contact-button">
 
-                <i class="fa-brands fa-linkedin"></i>
-
-                <h3>LinkedIn</h3>
-
-                <a href="https://linkedin.com/in/tonprofil"
-                   target="_blank">
-
-                    Voir mon profil
-
-                </a>
-
-            </div>
-
-            <div class="contact-card">
-
-                <i class="fa-brands fa-github"></i>
-
-                <h3>GitHub</h3>
-
-                <a href="https://github.com/oliviafadiga"
-                   target="_blank">
-
-                    github.com/oliviafadiga
-
-                </a>
-
-            </div>
-
-            <div class="contact-card">
-
-                <i class="fa-solid fa-location-dot"></i>
-
-                <h3>Localisation</h3>
-                <p>Ile-de-France, France</p>
-                <p>Dakar, Sénégal</p>
-
-            </div>
-
-        </div>
-
-        <div class="contact-button">
-
-            <a href="mailto:olivia.fadiga.pa@hotmail.com"
-               class="btn btn-primary">
-
-                Me contacter
+                Discutons ensemble →
 
             </a>
 
@@ -476,15 +395,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <div class="container">
 
         <p>
-            © 2025 Olivia Fadiga — Développé avec HTML, CSS et JavaScript.
+            © 2026 Olivia Fadiga — Développé avec HTML, CSS et JavaScript.
         </p>
 
     </div>
 
 </footer>
 
+<script src="assets/js/loader.js"></script>
+<script src="assets/js/cursor.js"></script>
 <script src="assets/js/menu.js"></script>
-
 <script src="assets/js/observer.js"></script>
 
 </body>

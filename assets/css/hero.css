@@ -1,0 +1,245 @@
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    background:var(--bg);
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+}
+.hero-container{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    align-items:center;
+
+    gap:6rem;
+
+}
+.hero-left{
+
+    position:relative;
+
+    z-index:2;
+
+}
+.hero-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.8rem;
+
+    color:var(--secondary);
+
+    letter-spacing:.35rem;
+
+    text-transform:uppercase;
+
+    font-size:.85rem;
+
+    margin-bottom:2rem;
+
+}
+.hero-tag::before{
+
+    content:"";
+
+    width:60px;
+
+    height:1px;
+
+    background:var(--secondary);
+
+}
+
+.hero-background{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+}
+.gradient{
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.30;
+
+}
+.gradient-1{
+
+    background:#4F46E5;
+
+    top:-200px;
+
+    left:-150px;
+
+}
+.gradient-2{
+
+    background:#38BDF8;
+
+    bottom:-250px;
+
+    right:-100px;
+
+}
+
+ .photo-wrapper{
+
+    width:min(420px,100%);
+     clip-path:polygon(
+
+        8% 0,
+
+        100% 0,
+
+        100% 90%,
+
+        92% 100%,
+
+        0 100%,
+
+        0 10%
+
+    );
+
+
+    aspect-ratio:4/5;
+
+    position:relative;
+
+}
+.photo-wrapper::before{
+
+    content:"OF";
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:18rem;
+
+    font-weight:700;
+
+    color:rgba(255,255,255,.03);
+
+    z-index:-1;
+
+}
+
+.photo-wrapper img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+.photo-wrapper:hover{
+
+    transform:
+
+    rotate(-2deg)
+
+    scale(1.03);
+
+}
+
+.hero h1{
+
+    display:flex;
+
+    flex-direction:column;
+
+    line-height:.85;
+
+}
+.hero h1 span{
+
+    font-size:clamp(5rem,10vw,9rem);
+
+    font-weight:700;
+
+    letter-spacing:-6px;
+
+    text-transform:uppercase;
+
+}
+.hero h1 .accent{
+
+    color:transparent;
+
+    -webkit-text-stroke:2px var(--primary);
+
+}
+.hero-description{
+
+    max-width:520px;
+
+    margin-top:2.5rem;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    color:var(--muted);
+
+}
+.hero-buttons{
+    margin:5rem 4rem 6rem 2rem;
+
+
+    display:flex;
+
+    gap:1.5rem;
+
+    margin-top:3rem;
+
+}
+.hero-right{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+}

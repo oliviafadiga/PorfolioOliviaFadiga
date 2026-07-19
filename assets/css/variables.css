@@ -4,20 +4,24 @@
    ========================================== */
 
 :root{
+--muted:#94A3B8;
+
+--line:rgba(255,255,255,.08);
 
     /* Couleurs principales */
-
-    --primary:#2563EB;
+  
+    --primary:#6C63FF;
     --primary-dark:#1D4ED8;
+    --secondary:#38BDF8;
 
     /* Couleurs de fond */
 
-    --background:#F8FAFC;
-    --surface:#FFFFFF;
+       --bg:#070B14;
+--surface:#0F172A;
 
     /* Couleurs du texte */
 
-    --text:#0F172A;
+--text:#F8FAFC;
     --text-light:#475569;
 
     /* Bordures */
