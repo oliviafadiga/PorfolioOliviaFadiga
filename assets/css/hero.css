@@ -243,3 +243,49 @@
     justify-content:center;
 
 }
+/*======================================
+HERO RESPONSIVE
+=======================================*/
+
+@media (max-width:992px){
+
+.hero{
+
+    min-height:auto;
+    padding:10rem 0 6rem;
+
+}
+
+.hero-container{
+
+    grid-template-columns:1fr;
+    gap:4rem;
+    text-align:center;
+
+}
+
+.hero-left{
+
+    order:2;
+
+}
+
+.hero-right{
+
+    order:1;
+
+}
+
+.hero-description{
+
+    margin-inline:auto;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+}
