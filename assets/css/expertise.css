@@ -81,3 +81,26 @@ EXPERTISE
     color:var(--muted);
 
 }
+.expertise-item:nth-child(1){
+
+    transition-delay:.1s;
+
+}
+
+.expertise-item:nth-child(2){
+
+    transition-delay:.2s;
+
+}
+
+.expertise-item:nth-child(3){
+
+    transition-delay:.3s;
+
+}
+
+.expertise-item:nth-child(4){
+
+    transition-delay:.4s;
+
+}

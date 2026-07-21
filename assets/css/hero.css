@@ -289,3 +289,26 @@ HERO RESPONSIVE
 }
 
 }
+.hero .hero-tag{
+
+    transition-delay:.1s;
+
+}
+
+.hero h1{
+
+    transition-delay:.3s;
+
+}
+
+.hero .hero-description{
+
+    transition-delay:.5s;
+
+}
+
+.hero .hero-buttons{
+
+    transition-delay:.7s;
+
+}

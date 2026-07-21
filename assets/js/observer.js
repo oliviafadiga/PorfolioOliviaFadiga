@@ -1,18 +1,27 @@
-const observer = new IntersectionObserver((entries)=>{
+const reveals = document.querySelectorAll(".reveal");
 
-entries.forEach(entry=>{
+const observer = new IntersectionObserver((entries) => {
 
-if(entry.isIntersecting){
+    entries.forEach(entry => {
 
-entry.target.classList.add("show");
+        if (entry.isIntersecting) {
 
-}
+            entry.target.classList.add("active");
+
+            observer.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+
+    threshold: 0.15
 
 });
 
-},{
-threshold:.2
-});
+reveals.forEach(element => {
 
-document.querySelectorAll(".hero-content,.hero-image,.section")
-.forEach(el=>observer.observe(el));
+    observer.observe(element);
+
+});
